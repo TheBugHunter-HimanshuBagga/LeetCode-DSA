@@ -1,3 +1,4 @@
+// Insert
 public class BinarySearchTree {
 
     Node root;
