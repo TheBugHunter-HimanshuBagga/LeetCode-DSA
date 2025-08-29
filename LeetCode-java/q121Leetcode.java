@@ -1,4 +1,4 @@
-// Thi is q121 in Leetcode 
+// This is q121 in Leetcode 
 class Solution {
     public int maxProfit(int[] prices) {
         int minsofar = prices[0];

@@ -21,7 +21,7 @@ struct Node *AtFirstNode(struct Node *head , int data){
 }
 
 int main(){
-    struct Node *head;
+    struct Node *head;  
     struct Node *second;
     struct Node *third;
     struct Node *fourth;
