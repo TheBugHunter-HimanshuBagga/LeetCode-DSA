@@ -25,22 +25,17 @@ public class CircularQueue {
     }
 
     // Add an element to the queue
-    public void enqueue(int value) {
-        if (isFull()) {
-            System.out.println("Queue is full! Cannot enqueue " + value);
-            return;
+    public void enqueue(int value){
+        if((rear+1)%size == front)
+        {
+            System.out.println("Queue is full ! cannot enqueue" + value);
         }
-
-        // If first element
-        if (isEmpty()) {
+        if(front == -1){
             front = 0;
         }
-
-        // Move rear in circular manner
-        rear = (rear + 1) % capacity;
+        rear = (rear+1)%size;
         queue[rear] = value;
         size++;
-        System.out.println("Enqueued: " + value);
     }
 
     // Remove an element from the queue
